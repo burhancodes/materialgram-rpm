@@ -44,8 +44,8 @@ jobs:
           git clone https://${{ secrets.PAT }}@github.com/burhancodes/materialgram-rpm repo
           cd repo
           sed -i "s/^Version:.*/Version:        ${tag}/" materialgram.spec
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "burhanverse"
+          git config --global user.email "contact@burhanverse.eu.org"
           git add materialgram.spec
           git commit -m "Updated to version ${tag}"
           git push
