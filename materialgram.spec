@@ -9,6 +9,10 @@ License:        GPLv3
 URL:            https://github.com/kukuruzka165/materialgram
 Source0:        https://github.com/kukuruzka165/materialgram/releases/download/v%{version}/materialgram-v%{version}.tar.gz
 
+BuildRequires:  tar
+BuildRequires:  sed
+Requires:       python3
+
 %description
 Telegram Desktop fork with Material Design and other improvements, which is based on the Telegram API and the MTProto secure protocol.
 
