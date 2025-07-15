@@ -44,7 +44,13 @@ jobs:
         run: |
           git clone https://${{ secrets.PAT }}@github.com/burhancodes/materialgram-rpm repo
           cd repo
+          
+          # Update version
           sed -i "s/^Version:.*/Version:        ${tag}/" materialgram.spec
+          # Update changelog
+          current_date=$(date "+%a %b %d %Y")
+          sed -i "/^%changelog/a\\* ${current_date} Burhanverse <contact@burhanverse.eu.org> - ${tag}-1\\n- Updated to version ${tag}" materialgram.spec
+          
           git config --global user.name "burhanverse"
           git config --global user.email "contact@burhanverse.eu.org"
           git add materialgram.spec

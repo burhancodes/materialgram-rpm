@@ -62,3 +62,7 @@ if [ "$1" -eq 0 ]; then
     rm -rf "$USER_HOME/.local/share/materialgram"
   fi
 fi
+
+%changelog
+* Tue Jul 15 2025 Burhanverse <contact@burhanverse.eu.org> - 5.16.4.1-1
+- Updated to version 5.16.4.1
