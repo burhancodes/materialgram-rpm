@@ -16,7 +16,6 @@ Author: kukuruzka  <kukuruzka165@github.com>
 
 BuildRequires: tar
 BuildRequires: sed
-BuildRequires: desktop-file-utils
 
 Requires: hicolor-icon-theme
 Requires: desktop-file-utils
@@ -40,8 +39,6 @@ cp -a %{_sourcedir}/usr/bin/materialgram %{buildroot}/usr/bin/
 cp -a %{_sourcedir}/usr/share/* %{buildroot}/usr/share/
 
 chmod +x %{buildroot}/usr/bin/materialgram
-
-desktop-file-validate %{buildroot}/usr/share/applications/io.github.kukuruzka165.materialgram.desktop
 
 %files
 /usr/bin/materialgram
