@@ -64,6 +64,8 @@ fi
 /usr/bin/update-desktop-database &> /dev/null || :
 
 if [ "$1" -eq 0 ]; then
+  pkill -f materialgram || true
+  
   USER_HOME="/home/${SUDO_USER:-$USER}"
 
   if [ -d "$USER_HOME/.local/share/materialgram" ]; then
