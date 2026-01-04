@@ -1,5 +1,5 @@
 Name:           materialgram
-Version:        6.3.10.1
+Version:        6.4.0.1
 Release:        2%{?dist}
 Summary:        Telegram Desktop fork with material icons and some improvements
 Vendor:         burhancodes
@@ -77,6 +77,8 @@ fi
 /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
+* Sun Jan 04 2026 Burhanverse <contact@burhanverse.eu.org> - 6.4.0.1-1
+- Updated to version 6.4.0.1
 * Mon Dec 29 2025 Burhanverse <contact@burhanverse.eu.org> - 6.3.10.1-1
 - Updated to version 6.3.10.1
 * Sun Oct 12 2025 Burhanverse <contact@burhanverse.eu.org> - 6.2.3.1-1
